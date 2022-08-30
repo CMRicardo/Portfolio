@@ -1,12 +1,22 @@
+---
+import Github from "../icons/Github.astro";
+import Twitter from "../icons/Twitter.astro";
+---
+
 <nav>
   <a href="/"><h2>Ricardo Corrales</h2></a>
   <ul>
-    <li><a href="https://github.com/CMRicardo">Github</a></li>
-    <li><a href="https://twitter.com/RichardCM">Twitter</a></li>
+    <li>
+      <a target="_blank" href="https://github.com/CMRicardo"><Github /></a>
+    </li>
+    <li>
+      <a target="_blank" href="https://twitter.com/RichardCM"><Twitter /></a>
+    </li>
   </ul>
   <ul>
     <li><a href="#Projects">Projects</a></li>
     <li><a href="#About">About me</a></li>
+    <li><a href="/CV-Ricardo-Corrales.pdf">My CV</a></li>
   </ul>
 </nav>
 
@@ -16,11 +26,20 @@
     justify-content: space-between;
     align-items: center;
     padding: var(--space);
+    position: sticky;
+    top: 0;
+    background: var(--color-bg);
   }
 
   ul {
     display: flex;
     gap: 1rem;
     list-style: none;
+  }
+  a {
+    transition: transform 0.5s ease;
+  }
+  a:hover {
+    transform: scale(1.1);
   }
 </style>

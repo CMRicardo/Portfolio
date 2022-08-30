@@ -1,11 +1,23 @@
 ---
-const { title, image } = Astro.props;
+import Github from "../icons/Github.astro";
+
+export interface Props {
+  title: string;
+  image: string;
+  code: string;
+  deploy: string;
+}
+const { title, image, code, deploy } = Astro.props;
 ---
 
 <article>
-  <img src={image} alt={`${title}'s image'`} />
+  <img src={image} alt={`${title}'s image`} />
   <h3>{title}</h3>
   <slot />
+  <div>
+    <a href={code} target="_blank" rel="noopener noreferrer"><Github /></a>
+    <a href={deploy} target="_blank" rel="noopener noreferrer"><Github /></a>
+  </div>
 </article>
 
 <style>

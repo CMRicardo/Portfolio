@@ -6,6 +6,7 @@
     <p>👋 Hi</p>
     <h1>I'm Ricardo Corrales</h1>
     <small>Software Developer</small>
+    <a target="_blank" href="/CV-Ricardo-Corrales.pdf">Get my CV</a>
   </div>
 </header>
 
@@ -24,6 +25,7 @@
   header > div {
     display: grid;
     place-items: center;
+    gap: 0.5rem;
   }
 
   p {
@@ -38,5 +40,20 @@
 
   small {
     color: var(--color-text);
+  }
+
+  a {
+    padding: 0.5rem 1rem;
+    background: var(--color-accent);
+    color: var(--color-text);
+    border-radius: 10px;
+    font-size: var(--text-base);
+    transition: transform 0.5s ease;
+  }
+  a:hover {
+    transform: scale(1.1);
+  }
+  a:active {
+    transform: scale(0.9);
   }
 </style>
