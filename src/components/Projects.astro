@@ -1,3 +1,40 @@
+---
+import ProjectItem from "./Project-Item.astro";
+---
+
 <section>
   <h2 id="Projects">Projects</h2>
+  <div>
+    <ProjectItem title="Rick and Morty" image="images/RickAndMorty.png">
+      <p>
+        This app lets you see interesting info about your favourite rick and
+        morty characters
+      </p>
+    </ProjectItem>
+    <ProjectItem title="Rick and Morty" image="images/RickAndMorty.png">
+      <p>
+        This app lets you see interesting info about your favourite rick and
+        morty characters
+      </p>
+    </ProjectItem>
+    <ProjectItem title="Rick and Morty" image="images/RickAndMorty.png">
+      <p>
+        This app lets you see interesting info about your favourite rick and
+        morty characters
+      </p>
+    </ProjectItem>
+    <ProjectItem title="Rick and Morty" image="images/RickAndMorty.png">
+      <p>
+        This app lets you see interesting info about your favourite rick and
+        morty characters
+      </p>
+    </ProjectItem>
+  </div>
 </section>
+
+<style>
+  div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+</style>
