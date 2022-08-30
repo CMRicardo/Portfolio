@@ -1,15 +1,36 @@
 <header>
-  <h1>👋 Hi</h1>
-  <p>I'm Ricardo Corrales</p>
+  <div>
+    <img src="https://github.com/CMRicardo.png" alt="Profile picture" />
+  </div>
+  <div>
+    <p>👋 Hi</p>
+    <h1>I'm Ricardo Corrales</h1>
+  </div>
 </header>
 
 <style>
   header {
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     justify-content: center;
+    margin: 0 auto;
     align-items: center;
-  }
-  p {
     color: var(--color-accent);
+    font-size: var(--text-lg);
+  }
+
+  header > div {
+    display: grid;
+    place-items: center;
+  }
+
+  p {
+    font-size: 4rem;
+  }
+
+  img {
+    border-radius: 50%;
+    width: 100%;
+    max-width: 20rem;
   }
 </style>
