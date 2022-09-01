@@ -3,9 +3,12 @@ import Github from "../icons/Github.astro";
 import Twitter from "../icons/Twitter.astro";
 ---
 
-<nav>
-  <a href="/"><h2>Ricardo Corrales</h2></a>
-  <ul>
+<nav class="flex justify-between py-4 px-8 sticky top-0 bg-gray-900">
+  <a class="font-bold text-xl hover:scale-110 transition-transform" href="/">
+    <h2>Ricardo Corrales</h2>
+  </a>
+
+  <ul class="flex justify-between gap-4">
     <li>
       <a target="_blank" href="https://github.com/CMRicardo"><Github /></a>
     </li>
@@ -13,34 +16,10 @@ import Twitter from "../icons/Twitter.astro";
       <a target="_blank" href="https://twitter.com/RichardCM"><Twitter /></a>
     </li>
   </ul>
-  <ul>
+
+  <ul class="flex justify-between gap-4">
     <li><a href="#Projects">Projects</a></li>
     <li><a href="#About">About me</a></li>
-    <li><a href="/CV-Ricardo-Corrales.pdf">My CV</a></li>
+    <li><a href="/CV-Ricardo-Corrales.pdf" target="_blank">My CV</a></li>
   </ul>
 </nav>
-
-<style>
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: var(--space);
-    position: sticky;
-    z-index: var(--z-high);
-    top: 0;
-    background: var(--color-bg);
-  }
-
-  ul {
-    display: flex;
-    gap: 1rem;
-    list-style: none;
-  }
-  a {
-    transition: transform 0.5s ease;
-  }
-  a:hover {
-    transform: scale(1.1);
-  }
-</style>

@@ -7,7 +7,7 @@ const { title } = Astro.props;
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html class="scroll-smooth" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -15,59 +15,7 @@ const { title } = Astro.props;
     <title>{title}</title>
     <meta name="description" content="Ricardo Corrales own Portfolio" />
   </head>
-  <body>
+  <body class="bg-gray-900 text-gray-300">
     <slot />
-    <style is:global>
-      :root {
-        --text-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
-        --text-lg: clamp(1.2rem, 0.7vw + 1.2rem, 1.5rem);
-        --text-xl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
-
-        --color-text: #e3e3e3;
-        --color-bg: #1b191d;
-        --color-accent: #6b57ff;
-
-        --space: 0.5rem 4rem;
-        --z-high: 1000;
-      }
-
-      html {
-        font-family: system-ui, sans-serif;
-        font-size: var(--text-base);
-        color: var(--color-text);
-        background-color: var(--color-bg);
-        color-scheme: dark;
-        scroll-behavior: smooth;
-      }
-
-      *,
-      *::after,
-      *::before {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-      a {
-        text-decoration: none;
-        color: var(--color-text);
-      }
-      section {
-        padding: var(--space);
-        min-height: 100vh;
-      }
-
-      ::selection {
-        background: var(--color-accent);
-        color: var(--color-text);
-      }
-
-      img {
-        width: 100%;
-      }
-      *:focus {
-        outline: 2px solid var(--color-accent);
-      }
-    </style>
   </body>
 </html>

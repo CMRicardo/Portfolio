@@ -1,59 +1,12 @@
-<header>
-  <div>
-    <img src="https://github.com/CMRicardo.png" alt="Profile picture" />
-  </div>
-  <div>
-    <p>👋 Hi</p>
-    <h1>I'm Ricardo Corrales</h1>
-    <small>Software Developer</small>
-    <a target="_blank" href="/CV-Ricardo-Corrales.pdf">Get my CV</a>
-  </div>
+<header class="grid place-items-center min-h-screen text-xl text-center">
+  <section class="grid gap-4">
+    <p class="text-8xl">👋 Hi</p>
+    <h1 class="text-6xl">I'm Ricardo Corrales</h1>
+    <small class="text-lg">Software Developer</small>
+    <a
+      class="p-2 bg-purple-800 rounded"
+      target="_blank"
+      href="/CV-Ricardo-Corrales.pdf">Get my CV</a
+    >
+  </section>
 </header>
-
-<style>
-  header {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    justify-content: center;
-    margin: 0 auto;
-    align-items: center;
-    color: var(--color-accent);
-    font-size: var(--text-lg);
-    text-align: center;
-  }
-
-  header > div {
-    display: grid;
-    place-items: center;
-    gap: 0.5rem;
-  }
-
-  p {
-    font-size: 4rem;
-  }
-
-  img {
-    border-radius: 50%;
-    width: 100%;
-    max-width: 20rem;
-  }
-
-  small {
-    color: var(--color-text);
-  }
-
-  a {
-    padding: 0.5rem 1rem;
-    background: var(--color-accent);
-    color: var(--color-text);
-    border-radius: 10px;
-    font-size: var(--text-base);
-    transition: transform 0.5s ease;
-  }
-  a:hover {
-    transform: scale(1.1);
-  }
-  a:active {
-    transform: scale(0.9);
-  }
-</style>
